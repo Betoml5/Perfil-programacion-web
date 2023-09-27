@@ -1,0 +1,34 @@
+﻿@model Perfil.Models.ViewModels.IndexViewModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<html>
+    <head>
+        <link rel="stylesheet" href="~/index.css" />
+    </head>
+    <body>
+        <main>
+           <section class="personal-info">
+                <h2>Información personal</h2>
+                <p>Nombre</p>
+                <p>@Model.Name</p>
+                <p>Apellido</p>
+                <p>@Model.LastName</p>
+                <p>Carrera</p>
+                <p>@Model.Career</p>
+                <p>Celular</p>
+                <p>@Model.Phone</p>
+                <p>Numero de control</p>
+                <p>@Model.ControlNumber</p>
+
+           </section>
+        </main>
+    <footer>
+        <p>Hecho por Alberto Martinez</p>
+    </footer>
+    </body>
+   
+</html>

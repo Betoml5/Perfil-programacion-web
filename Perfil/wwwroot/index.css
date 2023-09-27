@@ -1,0 +1,14 @@
+﻿*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.personal-info{
+    display:flex;
+    flex-direction:column;
+    padding: 20px;
+    margin
+    background:#ccc;
+    color:#fff;
+}
