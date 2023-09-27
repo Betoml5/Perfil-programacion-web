@@ -13,22 +13,34 @@
         <main>
            <section class="personal-info">
                 <h2>Información personal</h2>
-                <p>Nombre</p>
+
+                <div class="image-wrapper">
+                    <img src="~/img/profile.jpeg" alt="Foto de perfil" /> 
+                </div>
+
+                <div class="wrapper">
+                <p>Nombre: </p>
                 <p>@Model.Name</p>
-                <p>Apellido</p>
+                </div>
+               <div class="wrapper">
+                <p>Apellido: </p>
                 <p>@Model.LastName</p>
-                <p>Carrera</p>
+               </div>
+                <div class="wrapper">
+                <p>Carrera: </p>
                 <p>@Model.Career</p>
-                <p>Celular</p>
+                </div>
+               <div class="wrapper">
+                <p>Celular: </p>
                 <p>@Model.Phone</p>
-                <p>Numero de control</p>
+               </div>
+                <div class="wrapper">
+                <p>Numero de control: </p>
                 <p>@Model.ControlNumber</p>
+                </div>
 
            </section>
         </main>
-    <footer>
-        <p>Hecho por Alberto Martinez</p>
-    </footer>
     </body>
    
 </html>
