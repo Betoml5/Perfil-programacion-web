@@ -5,17 +5,24 @@ namespace Conversion.Controllers.Home
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index(IndexViewModel vm)
         {
-            return View();
+    
+           if (vm == null)
+                return NotFound();
+           if (vm.Moneda == "USD")
+            {
+                vm.Resultado = vm.Valor / 18m;
+            }
+
+            if (vm.Moneda == "MXN")
+            {
+                vm.Resultado = vm.Valor * 18m;
+            }
+
+            return View(vm);
         }
 
-        public IActionResult Convert(decimal mxn, decimal usd)
-        {
-            IndexViewModel vm = new IndexViewModel();    
-
-
-            return View();
-        }
+     
     }
 }

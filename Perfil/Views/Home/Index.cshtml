@@ -3,44 +3,34 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    Layout = "Layout";
 }
 
-<html>
-    <head>
-        <link rel="stylesheet" href="~/index.css" />
-    </head>
-    <body>
+
         <main>
            <section class="personal-info">
                 <h2>Información personal</h2>
 
-                <div class="image-wrapper">
-                    <img src="~/img/profile.jpeg" alt="Foto de perfil" /> 
-                </div>
+               
 
                 <div class="wrapper">
-                <p>Nombre: </p>
-                <p>@Model.Name</p>
+                <p>Nombre de la materia: </p>
+                <p>@Model.NombreMateria</p>
                 </div>
                <div class="wrapper">
-                <p>Apellido: </p>
-                <p>@Model.LastName</p>
+                <p>Nombre alumno: </p>
+                <p>@Model.Nombre</p>
                </div>
                 <div class="wrapper">
-                <p>Carrera: </p>
-                <p>@Model.Career</p>
+                <p>Periodo: </p>
+                <p>@Model.Periodo</p>
                 </div>
                <div class="wrapper">
-                <p>Celular: </p>
-                <p>@Model.Phone</p>
+                <p>Semestre: </p>
+                <p>@Model.Semestre</p>
                </div>
-                <div class="wrapper">
-                <p>Numero de control: </p>
-                <p>@Model.ControlNumber</p>
-                </div>
+           
 
            </section>
         </main>
-    </body>
-   
-</html>
+

@@ -2,17 +2,10 @@
 {
     public class IndexViewModel
     {
+        public string Moneda { get; set; }
 
-
-		private decimal mxn;
-
-		public int Mxn
-		{
-			get { return mxn; }
-			set { mxn = value; }
-		}
-
-
+        public decimal Valor { get; set; }
+        public decimal Resultado { get; set; }
 
 
 	}

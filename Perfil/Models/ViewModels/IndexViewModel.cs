@@ -2,12 +2,12 @@
 {
     public class IndexViewModel
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string LastName { get; set; }
-        public string ControlNumber { get; set; }
-        public string Career { get; set; }
-        public string Phone { get; set; }
+        public string NombreMateria { get; set; }
+        public string Semestre { get; set; }
+        public string Periodo { get; set; }
+        public string Nombre { get; set; }
 
     }
+
+  
 }
