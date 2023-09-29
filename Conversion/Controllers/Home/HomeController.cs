@@ -10,6 +10,10 @@ namespace Conversion.Controllers.Home
     
            if (vm == null)
                 return NotFound();
+           if (vm.Valor == 0)
+                return View(vm);
+           if (vm.Moneda == null)
+                return View(vm);
            if (vm.Moneda == "USD")
             {
                 vm.Resultado = vm.Valor / 18m;

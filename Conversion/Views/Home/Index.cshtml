@@ -17,14 +17,14 @@
                 <input type="radio" name="moneda" value="MXN" /> <label>MXN</label>
                     
                 <br/>
-                <input type="text" name="valor" />
+                <input type="number" name="valor" placeholder="100" />
 
 			   <input type="submit" value="Convertir" />
                <br />
                <br />
 
                <label >Resultado: @Model.Resultado.ToString("$0.00") @if (Model.Moneda == "MXN") 
-{
+                {
 				   <text>MXN</text>
 			   }
 			   else
